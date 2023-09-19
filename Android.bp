@@ -69,6 +69,7 @@ cc_library {
         "lib/genl/genl.c",
         "lib/genl/mngt.c",
         "lib/netfilter/nfnl.c",
+        "lib/route/addr.c",
         "lib/route/link.c",
         "lib/route/link/api.c",
         "lib/route/link/macsec.c",
