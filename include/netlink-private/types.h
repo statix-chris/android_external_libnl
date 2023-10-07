@@ -626,10 +626,10 @@ struct rtnl_flower
 	uint8_t          cf_src_mac_mask[ETH_ALEN];
 	uint8_t          cf_dst_mac[ETH_ALEN];
 	uint8_t          cf_dst_mac_mask[ETH_ALEN];
-	in_addr_t        cf_ipv4_src;
-	in_addr_t        cf_ipv4_src_mask;
-	in_addr_t        cf_ipv4_dst;
-	in_addr_t        cf_ipv4_dst_mask;
+        struct in_addr   cf_ipv4_src;
+	struct in_addr   cf_ipv4_src_mask;
+	struct in_addr   cf_ipv4_dst;
+	struct in_addr   cf_ipv4_dst_mask;
 	uint8_t          cf_ip_dscp;
 	uint8_t          cf_ip_dscp_mask;
 };
