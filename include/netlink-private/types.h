@@ -30,6 +30,9 @@
 #include <linux/if_ether.h>
 
 #include <netinet/in.h>
+#ifndef in_addr_t
+typedef uint32_t in_addr_t;
+#endif
 
 #define NL_SOCK_PASSCRED	(1<<1)
 #define NL_OWN_PORT		(1<<2)
